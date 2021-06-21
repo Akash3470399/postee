@@ -1,0 +1,40 @@
+{% extends 'blog/base.html' %} 
+{% block title %} Add Post {% endblock %} {% block content %}
+<div class="continer mt-2">
+  <h3 class="text-center">Write your post here.</h3>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %} {{ form.media }}
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+              <div class="row mt-1">
+          {{ form.author}}
+        </div>
+        <div class="row mt-1">
+          {{ form.title}}
+        </div>
+        <div class="row mt-1">
+          {{ form.category.label}}
+          {{ form.category}}
+        </div>
+        <div class="row mt-2">
+          <div class="col-4">
+            {{ form.thumbnail.label }} 
+            {{ form.thumbnail}}
+          </div>
+          <div class="col-8"></div>
+        </div>
+        <div class="row mt-2">
+            {{ form.content.label }} {{form.content}}
+        </div>
+        <div class="text-center mt-2">
+          <button type="submit" class="btn btn-outline-info">
+            <strong>Add Post </strong>
+          </button>
+        </div>
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </form>
+</div>
+{% endblock %}

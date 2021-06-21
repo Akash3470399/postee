@@ -1,0 +1,90 @@
+<div class="my-1">
+
+  <div
+    id="carouselExampleIndicators"
+    class="carousel slide"
+    data-bs-ride="carousel"
+  >
+    <div class="carousel-indicators">
+    {% for i in recent_posts%}
+      <button type="button" data-bs-target="#carouselExampleIndicators" 
+      data-bs-slide-to={{ forloop.counter0 }} 
+      class="active"
+        {% if forloop.counter == 1 %}
+          aria-current="true"
+        {% endif %}
+        aria-label="Slide {{ forloop.counter }}"
+      ></button>
+      {% endfor %}
+
+    </div>
+    <div class="carousel-inner">
+    {% for post in recent_posts%}
+      <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %} bg-info">
+              <div class="row">
+                <div class="col">
+                  <header class="bg-transperant py-1">
+                    <div class="container px-5">
+                      <div class="row gx-5 align-items-center justify-content-center">
+                        <div class="col-lg-8 col-xl-7 col-xxl-6">
+                          <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-5 fw-bolder text-white mb-2">
+                              {{post.title}}
+                            </h1>
+                            <p class="lead fw-normal text-white-50 mb-4">
+                              {{post.author}}
+                            </p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xl-start">
+                              <a
+                                class="btn btn-primary btn-lg px-4 me-sm-3"
+                                href="#features"
+                              >
+                                Get Started
+                              </a>
+                              <a
+                                class="btn btn-outline-light btn-lg px-4"
+                                href="#!"
+                              >
+                                Learn More
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center">
+                          <img
+                            class="img-fluid rounded-3 my-5"
+                            {% comment %} src="https://dummyimage.com/600x400/343a40/6c757d" {% endcomment %}
+                            src="{{post.thumbnail.url}}"
+                            alt="..."
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </header>
+                </div>
+              </div>
+        </div>
+
+    {% endfor %}
+
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
