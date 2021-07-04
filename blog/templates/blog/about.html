@@ -1,0 +1,42 @@
+{% extends 'blog/base.html' %}
+
+{% block title%}About Us {% endblock %}
+
+{% block content %}
+
+    <header class="py-5">
+    <div class="container px-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xxl-6">
+                <div class="text-center my-5">
+                    <h1 class="fw-bolder mb-3">This blog is to learn new things.</h1>
+                    <p class="lead fw-normal text-muted mb-4">Started this website as personel project to mantain record what I learnt till yet. If you find this is usefull share with others.</p>
+                    <h3class="text-right">~Akash B Bhagat</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <aside class="bg-primary bg-gradient rounded-3 p-3 p-sm-5 mt-2">
+                <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
+                    <div class="mb-4 mb-xl-0">
+                        <div class="fs-3 fw-bold text-white"> You can put your feedback at  
+                            <div class="text-white-60">abc@gmail.com</div>
+                        </div>
+                    </div>
+                    <div class="ms-xl-4">
+                        <div class="fs-5 fw-bold text-white"> Get in touch.
+                        </div>
+                        <div class="input-group mb-2">
+                            <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter">
+                                &nbsp;<button class="btn btn-outline-dark" id="button-newsletter" type="button"><strong>Remind me</strong></button>
+                        </div>
+                        <div class="small text-white-50">We care about privacy, and will never share your data.</div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</header>
+
+{% endblock %}

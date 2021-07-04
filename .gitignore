@@ -6,8 +6,8 @@ __pycache__/
 /.vscode
 
 #local file
-/startbootstrap-modern-business-gh-pages
-/refer-temp
+/media/images
+/media/logs
 # C extensions
 *.so
 
