@@ -50,5 +50,6 @@ class PostDetail(DetailView):
 class PostList(ListView):
     model = Post
     context_object_name = 'posts'
+    ordering = "timestamp"
     paginate_by = 5
 

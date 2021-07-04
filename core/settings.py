@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z8t2ue&jklnx*^_jkkx7vy)pa%_%aj18sp7dspp6u42r$s=tvm'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['postee347.herokuapp.com/','127.0.0.1:8000']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
+    'gdstorage',
     'ckeditor',
     'ckeditor_uploader',
     'blog',
@@ -46,11 +47,11 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    # 'allauth.socialaccount.providers.facebook',
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -89,17 +90,28 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'DEMO_TEST_POSTS',
-        'USER' : 'postgres',
-        'PASSWORD':'Dbaakash',
-        'HOST':'localhost',
-        'PORT' : '5432',
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'DEMO_TEST_POSTS',
+#         'USER' : 'postgres',
+#         'PASSWORD':'Dbaakash',
+#         'HOST':'localhost',
+#         'PORT' : '5432',
+#     }
+# }
+
+
+DATABASE = {
+    'default':{
+        'ENGINE':'django.db.backend.sqlite3',
+        'NAME':BASE_DIR/'db.sqlite3',
     }
 }
 
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=600)
+DATABASE['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -177,3 +189,17 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
+ACCOUNT_EMAIL_REQUIRED = True
+# ACCOUNT_EMAIL_VERIFICATION = "mandatory"
+
+#Email 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = "ba441380@gmail.com"
+EMAIL_HOST_PASSWORD = "bhagat4321"
+DEFAULT_FROM_USER = EMAIL_HOST_USER
+
+
+#google drive json key
+GOOGLE_DRIVE_STORAGE_JSON_KEY_FILE = BASE_DIR / 'drive_json.json'

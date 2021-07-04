@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "django-blog-318215",
+  "private_key_id": "6b800e88f67d025fef18fb8492ac9f44892cde81",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQClHvClxm/Lr++B\nIBU+qjS9CdT6aOoR4plYAg0EqtXGU0gv6k+wY6i7d96455FzbTxzWM8sWKmdoy+0\nzGw9S0eGR+S6mxGN+i2u0RePvPYUkb7AXPt+OorUszhw+FWDif67oGSfQpRpY0k1\ntshOZKuUA8H5DriM22zLI7gb9Ikp+Cea/S+LpKa57A5cMLF6zqophy74ZjIBHNbm\nF81Ey8RJpxhlcg0O+ZTnDtw5a1CFp8tteBfTRYGwUyDzmc7ThxGJ9rn5kPSMpzuT\nuOaNgjj0sHWQjsLnainVfrW0H516d98b4t1E+eNNfZLNGaqDzY2wqDHFnofZJmRm\nroL2U3/DAgMBAAECggEADFSZJ+f/pThILF5W980CDzPSwbhf8mH3jYjpq/WN7Td+\n5oUa2lM24Hj9GtXAGNyJbRuurOMaF3l+MIQreRBMEQ0BWaYG05FhI/LdTZCQ18xi\ncD8BUNXSVDvl9Rm2WRJPAXfiy7nPF2egqfAyWRhPb8gwDgc5ZNtl7m2GbCAAti+B\nIE6ZC2mNXoxe7YAXDXy/wF78VCxydVpaQ4Bxx1KD5DXbaDBKTu617jrd3W/avJo1\nzzHuWYGu2vWpJlja4mEgIeKhMUwUyTqDG7GrYZ/kd+A42+E7607L6XDRavLoyb5w\nsaNC66vr3Cs+tC3Wij2TJAIM9mX4cPNrr3eMCod1kQKBgQDPpHvrOpq888XA/Jcm\nMj3p1Rzy+xlFrIQ3YRFRlWxGfBH+Mnvcyr2CJt5wQ2k61JwPVMr0hakZuxrv02on\nO8vhCOZ2jpaUHGUfWW29yOqqUAcfs7+a4Sm0Czc2VIhQu1KfgDDCg5fNBHifPgx6\nUJQXG6Foc/ts/lwgtU6aFW2CNwKBgQDLk1d0IFw04mj4o8HlzNAVvnV/F+/9SfzD\nM7M+tHviTYsUO8PyKgbh2FBuCZYcJ2x8GfIAE4vbhuzcfUu7gpkOqOISCsR+f/zV\n6egHpBgF63Ogw3yfkwexg7qIRzKrz2bSLH0+RtTgnI0eReUvxwsmXK4FCEBNO3bZ\nxet+5YcY1QKBgC9irhTkbuOoDf0Yp7XDyXVPeSfKPd40nIe20yj3HJqJPeHwy2t7\nqPvGuwSLnbwbQPIOu7JJvmls1ZzddmA1uTVFvrJXn+10/W7GDdE9xK/RS47killi\nAQ5hcNwpNmKWHSjhLD93oHDdEFnm4xoWwXT0jUU1Eq+w7H1aYvGu6irJAoGAQG+6\n1r8HcJXZtBnhXeOeWcOXXUsuY3Xv07mhms92BwOUaisgsp4q34Ggs7PFF9RCumVb\n/DozoqDqiEAAoLGN0N4T8LIH0CKi3PLUxtZh5D3Ks7As2jWn0cBoYopmt4tGeHAs\nlHHHH/FtmY92I9FU7ieXzW/3KnsP+45yJBBy2qECgYAhtK8IBZ5jcUj+OnYuj4fW\n7B4tUZwSNWKy+5I1fSL5rqh6L8OxVQ8q+FEW7M4FPxwPDtOCqw1v0q1/z9qt/Vje\n0usHvRzOwyvfQOExQb539sgnQ75friRboVnw8e7AeEGmzSFYpZ4/ZSkQtW+qZcoG\ncIL9E8MzLb8PmJtwupxlAw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "blog-716@django-blog-318215.iam.gserviceaccount.com",
+  "client_id": "113034102835979750574",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/blog-716%40django-blog-318215.iam.gserviceaccount.com"
+}
