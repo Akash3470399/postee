@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z8t2ue&jklnx*^_jkkx7vy)pa%_%aj18sp7dspp6u42r$s=tvm
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['postee347.herokuapp.com/','127.0.0.1:8000']
+ALLOWED_HOSTS = ['postee347.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -154,7 +154,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIR = [
     BASE_DIR / 'static',   
 ]
-STATIC_ROOT = BASE_DIR / 'static'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 
 #media files
