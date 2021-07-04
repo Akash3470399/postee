@@ -175,7 +175,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 #allauth related settings
 
-SITE_ID = 2
+SITE_ID = 1
 LOGIN_REDIRECT_URL='/'
 
 SOCIALACCOUNT_PROVIDERS = {
