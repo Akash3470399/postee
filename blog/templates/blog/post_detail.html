@@ -103,7 +103,7 @@
         }
 
 
-fetch("http://127.0.0.1:8000/add-comment/", {
+fetch("http://postee347.herokuapp.com/add-comment/", {
       method: 'POST',
       credentials: 'same-origin',
       headers:{
@@ -118,7 +118,6 @@ fetch("http://127.0.0.1:8000/add-comment/", {
   })
   .then(data => {
       
-  console.log(data)
 
   let cmt = ` <div class="d-flex py-2">
                         <div class="flex-shrink-0"><img class="rounded-circle" src="https://dummyimage.com/50x50/ced4da/6c757d.jpg" alt="..." /></div>
