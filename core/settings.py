@@ -87,19 +87,7 @@ AUTHENTICATION_BACKENDS = [
 WSGI_APPLICATION = 'core.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'DEMO_TEST_POSTS',
-#         'USER' : 'postgres',
-#         'PASSWORD':'Dbaakash',
-#         'HOST':'localhost',
-#         'PORT' : '5432',
-#     }
-# }
 
 
 DATABASES = {
@@ -198,7 +186,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = "ba441380@gmail.com"
-EMAIL_HOST_PASSWORD = "bhagat4321"
+EMAIL_HOST_PASSWORD = "*********"
 DEFAULT_FROM_USER = EMAIL_HOST_USER
 
 
